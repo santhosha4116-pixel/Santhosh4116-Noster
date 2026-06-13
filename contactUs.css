@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+    align-items: center;
+    
+}
+.navbar a{
+    color: black;
+    border: none;
+    text-decoration:none;
+}
+.navbar a:focus{
+    outline: none;
+}
+.navbar h1{
+    font-weight: 700;
+}
+.navbar__link{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+
+}
+.navbar__link a:hover{
+    border-bottom: black solid 2px;
+
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #1d232c;
+  padding: 20px;
+  color: white;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+.botton{
+   text-align: center;
+   margin-top: 50px;
+}
+.botton h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.botton p{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.inp{
+    justify-content: center;
+    display: inline-block;
+    border: black solid 3px;
+    width: 60%;    
+}
+#search{
+    width: 98%;
+    padding: 5px;
+    border: none;
+}
+#search:focus{
+    outline: none;
+}
+.but{
+    margin-top: 10px;
+}
+.but button{
+    background-color: #1d232c;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+     border-radius: 10px;
+     font-size: 25px;
+     border: none;
+     color: #e2e1e1;
+}
+.but button:focus{
+    outline: none;
+}
+.base{
+    background-color: #1d232c;
+    margin-top: 50px;
+    color: #e2e1e1;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.base h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.base p{
+    font-size: 40px;
+    font-weight: 400;
+}
+.icon i{
+    font-size: 40px;
+    margin: 10px;
+}
+.base h3{
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: 10px;
+}

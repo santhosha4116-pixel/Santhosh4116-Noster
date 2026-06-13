@@ -1,0 +1,393 @@
+/* ===========================
+   RESET & BASE
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+ 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+ 
+/* ===========================
+   TOP BANNER
+=========================== */
+.top {
+    align-items: center;
+    background-color: #1d232c;
+    color: #e2e1e1;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    gap: 12px;
+    text-align: center;
+}
+ 
+.add {
+    display: flex;
+}
+ 
+.remove {
+    display: none;
+}
+ 
+.top b {
+    font-weight: 700;
+}
+ 
+#xmark {
+    margin-left: 20px;
+    cursor: pointer;
+}
+ 
+/* ===========================
+   NAVBAR
+=========================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px;
+    align-items: center;
+}
+ 
+.navbar a {
+    color: black;
+    border: none;
+    text-decoration: none;
+}
+ 
+.navbar a:focus {
+    outline: none;
+}
+ 
+.navbar h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+ 
+.navbar__link {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+ 
+.navbar__link a:hover {
+    border-bottom: black solid 2px;
+}
+ 
+/* ===========================
+   MAIN LAYOUT
+=========================== */
+.Containersection {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    margin: 20px 30px;
+    gap: 20px;
+}
+ 
+/* ===========================
+   FILTER SECTION
+=========================== */
+.fiter-section {
+    border-right: solid black 2px;
+    padding-right: 20px;
+}
+ 
+.section-box {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+ 
+.section-box h3 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+ 
+.section-box input {
+    margin-bottom: 8px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+ 
+/* ===========================
+   SEARCH BAR
+=========================== */
+.search {
+    display: flex;
+    margin: 0 0 15px 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: black solid 1px;
+    border-radius: 10px;
+    padding: 8px 12px;
+}
+ 
+.search input {
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+ 
+.search input:focus {
+    outline: none;
+}
+ 
+/* ===========================
+   PRODUCT GRID
+=========================== */
+.dress-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+ 
+.dress-list img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 400px;
+}
+ 
+.dress-list h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+ 
+.dress-list p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    margin-top: 4px;
+}
+ 
+/* ===========================
+   NEWSLETTER
+=========================== */
+.botton {
+    text-align: center;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+ 
+.botton h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+ 
+.botton p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #555;
+}
+ 
+.inp {
+    justify-content: center;
+    display: inline-block;
+    border: black solid 3px;
+    width: 60%;
+}
+ 
+#search {
+    width: 98%;
+    padding: 8px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+ 
+#search:focus {
+    outline: none;
+}
+ 
+.but {
+    margin-top: 10px;
+}
+ 
+.but button {
+    background-color: #1d232c;
+    padding: 8px 18px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    color: #e2e1e1;
+    cursor: pointer;
+}
+ 
+.but button:focus {
+    outline: none;
+}
+ 
+/* ===========================
+   FOOTER
+=========================== */
+.base {
+    background-color: #1d232c;
+    margin-top: 50px;
+    color: #e2e1e1;
+    padding: 30px 30px 40px;
+}
+ 
+.base h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+ 
+.base p {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 500px;
+    line-height: 1.6;
+}
+ 
+.icon i {
+    font-size: 28px;
+    margin: 10px 10px 0 0;
+}
+ 
+.base h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+ 
+/* ===========================
+   RESPONSIVE - TABLET (900px)
+=========================== */
+@media (max-width: 900px) {
+ 
+    .Containersection {
+        grid-template-columns: 180px 1fr;
+        margin: 20px 20px;
+    }
+ 
+    .dress-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    .botton h1 {
+        font-size: 28px;
+    }
+ 
+    .botton p {
+        font-size: 16px;
+    }
+ 
+    .inp {
+        width: 80%;
+    }
+ 
+    .base h1 {
+        font-size: 32px;
+    }
+}
+ 
+/* ===========================
+   RESPONSIVE - MOBILE (600px)
+=========================== */
+@media (max-width: 600px) {
+ 
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin: 10px 15px;
+    }
+ 
+    .navbar__link {
+        flex-direction: column;
+        gap: 6px;
+    }
+ 
+    /* Layout: stack filter on top of products */
+    .Containersection {
+        grid-template-columns: 1fr;
+        margin: 15px;
+    }
+ 
+    .fiter-section {
+        border-right: none;
+        border-bottom: 2px solid black;
+        padding-right: 0;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+ 
+        /* Show filters in a row on mobile */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+ 
+    .section-box {
+        font-size: 14px;
+        min-width: 100px;
+    }
+ 
+    /* Products: 2 columns on mobile */
+    .dress-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+ 
+    .dress-list img {
+        height: 160px;
+    }
+ 
+    /* Newsletter */
+    .botton h1 {
+        font-size: 22px;
+    }
+ 
+    .botton p {
+        font-size: 14px;
+    }
+ 
+    .inp {
+        width: 90%;
+    }
+ 
+    .but button {
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+ 
+    /* Footer */
+    .base {
+        padding: 25px 20px 30px;
+    }
+ 
+    .base h1 {
+        font-size: 26px;
+    }
+ 
+    .base p {
+        font-size: 13px;
+    }
+ 
+    .icon i {
+        font-size: 22px;
+    }
+}
+ 
+
+
+
+
+
+

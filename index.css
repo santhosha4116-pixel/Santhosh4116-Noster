@@ -1,0 +1,721 @@
+/* ===========================
+   RESET & BASE
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+ 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+ 
+/* ===========================
+   TOP BANNER
+=========================== */
+.top-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d232c;
+    color: #e2e1e1;
+    padding: 10px 20px;
+    font-size: 16px;
+    gap: 12px;
+    text-align: center;
+}
+ 
+.top-banner b {
+    font-weight: 700;
+}
+ 
+.top-banner.remove {
+    display: none;
+}
+ 
+#xmark {
+    cursor: pointer;
+    font-size: 12px;
+    opacity: 0.8;
+}
+ 
+#xmark:hover {
+    opacity: 1;
+}
+ 
+/* ===========================
+   NAVBAR
+=========================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+ 
+.navbar__logo {
+    font-size: 24px;
+    font-weight: 800;
+}
+ 
+.navbar__links {
+    display: flex;
+    gap: 30px;
+}
+ 
+.navbar__links a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+ 
+.navbar__links a:hover {
+    border-bottom: 2px solid black;
+}
+ 
+.navbar__hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+ 
+/* MOBILE MENU */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px 30px;
+    gap: 12px;
+    border-top: 1px solid #eee;
+}
+ 
+.mobile-menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+ 
+.mobile-menu.open {
+    display: flex;
+}
+ 
+/* ===========================
+   HERO
+=========================== */
+.hero {
+    position: relative;
+    margin: 10px 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: black;
+}
+ 
+.hero__images {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+ 
+.hero__images::-webkit-scrollbar {
+    display: none;
+}
+ 
+.hero__images img {
+    width: 50%;
+    min-width: 50%;
+    height: 500px;
+    object-fit: cover;
+    opacity: 0.5;
+}
+ 
+.hero__text {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+}
+ 
+.hero__text h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+ 
+.hero__text h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+ 
+.hero__text button {
+    margin-top: 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+/* ===========================
+   SECTION TITLE
+=========================== */
+.section-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+ 
+/* ===========================
+   BRANDS
+=========================== */
+.brands {
+    padding: 50px 30px 20px;
+}
+ 
+.brands__grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+ 
+.brand-item {
+    text-align: center;
+}
+ 
+.brand-item img {
+    width: 60px;
+    margin: 0 auto 8px;
+}
+ 
+.brand-item p {
+    font-size: 14px;
+    font-weight: 400;
+}
+ 
+/* ===========================
+   SERVICES
+=========================== */
+.services {
+    padding: 40px 30px;
+}
+ 
+.services__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+ 
+.services__header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+ 
+.services__header p {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 50%;
+}
+ 
+.services__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+ 
+.service-card {
+    background-color: #f2f4f7;
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+ 
+.service-card i {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+ 
+.service-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+ 
+.service-card p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #555;
+}
+ 
+/* ===========================
+   NEW ARRIVALS
+=========================== */
+.new-arrivals {
+    padding: 20px 30px 40px;
+}
+ 
+.arrivals__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+ 
+.arrival-card {
+    position: relative;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+ 
+.arrival-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+ 
+.arrival-card button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+ 
+/* ===========================
+   MOST WANTED
+=========================== */
+.most-wanted {
+    padding: 20px 30px 40px;
+}
+ 
+.wanted__grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scrollbar-width: none;
+    padding-bottom: 10px;
+}
+ 
+.wanted__grid::-webkit-scrollbar {
+    display: none;
+}
+ 
+.wanted-card {
+    position: relative;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+ 
+.wanted-card img {
+    width: 220px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+ 
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+}
+ 
+.wanted-card i {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+ 
+/* ===========================
+   OFFER BANNER
+=========================== */
+.offer-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1d232c;
+    padding: 40px 30px;
+    margin: 20px 0;
+    gap: 30px;
+}
+ 
+.offer-banner__img img {
+    
+    border-radius: 0;
+    object-fit: cover;
+}
+ 
+.offer-banner__text {
+    color: white;
+    
+}
+ 
+.offer-banner__text h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+ 
+.offer-banner__text h4 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+ 
+.offer-banner__text button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+/* ===========================
+   NEWSLETTER
+=========================== */
+.newsletter {
+    text-align: center;
+    padding: 60px 30px;
+}
+ 
+.newsletter h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+ 
+.newsletter p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 20px;
+}
+ 
+.newsletter__form {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+ 
+.newsletter__form input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+ 
+.newsletter__form button {
+    background-color: #1d232c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+ 
+/* ===========================
+   FOOTER
+=========================== */
+.footer {
+    background-color: #1d232c;
+    color: #e2e1e1;
+    padding: 40px 30px;
+}
+ 
+.footer h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+ 
+.footer p {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 500px;
+    line-height: 1.6;
+}
+ 
+.footer__icons {
+    margin: 20px 0 10px;
+    display: flex;
+    gap: 15px;
+}
+ 
+.footer__icons i {
+    font-size: 28px;
+    cursor: pointer;
+}
+ 
+.footer__copy {
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+ 
+/* ===========================
+   RESPONSIVE - TABLET (900px)
+=========================== */
+@media (max-width: 900px) {
+ 
+    .hero__text h1 {
+        font-size: 32px;
+    }
+ 
+    .hero__images img {
+        width: 80%;
+        min-width: 80%;
+        height: 400px;
+    }
+ 
+    .brands__grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+ 
+    .services__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+ 
+    .services__header p {
+        max-width: 100%;
+        font-size: 15px;
+    }
+ 
+    .services__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    .arrivals__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    .offer-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    .offer-banner__img img {
+        width: 100%;
+        max-width: 400px;
+    border-radius: 0;
+    
+
+ }
+    }
+ 
+    .newsletter h2 {
+        font-size: 28px;
+    }
+ 
+    .newsletter p {
+        font-size: 15px;
+    }
+}
+ 
+/* ===========================
+   RESPONSIVE - MOBILE (600px)
+=========================== */
+@media (max-width: 600px) {
+ 
+    /* Banner */
+    .top-banner {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+ 
+    /* Navbar */
+    .navbar {
+        padding: 15px 20px;
+    }
+ 
+    .navbar__links {
+        display: none;
+    }
+ 
+    .navbar__hamburger {
+        display: block;
+    }
+ 
+    /* Hero */
+    .hero {
+        margin: 10px 15px;
+    }
+ 
+    .hero__images img {
+        width: 100%;
+        min-width: 100%;
+        height: 250px;
+    }
+ 
+    .hero__text {
+        bottom: 10%;
+        width: 95%;
+    }
+ 
+    .hero__text h1 {
+        font-size: 20px;
+    }
+ 
+    .hero__text h5 {
+        font-size: 13px;
+    }
+ 
+    .hero__text button {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+ 
+    /* Brands */
+    .brands {
+        padding: 30px 20px;
+    }
+ 
+    .brands__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+ 
+    /* Services */
+    .services {
+        padding: 30px 20px;
+    }
+ 
+    .services__cards {
+        grid-template-columns: 1fr;
+    }
+ 
+    /* Arrivals */
+    .new-arrivals {
+        padding: 20px 20px 30px;
+    }
+ 
+    .arrivals__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+ 
+    .arrival-card img {
+        height: 180px;
+    }
+ 
+    /* Most Wanted */
+    .most-wanted {
+        padding: 20px 20px 30px;
+    }
+ 
+    .wanted-card img {
+        width: 170px;
+        height: 210px;
+    }
+ 
+    /* Offer Banner */
+    .offer-banner {
+        padding: 30px 20px;
+    }
+ .offer-banner__img img {
+    border-radius: 0;
+
+
+ }
+    .offer-banner__text h2 {
+        font-size: 24px;
+    }
+ 
+    .offer-banner__text h4 {
+        font-size: 15px;
+    }
+ 
+    /* Newsletter */
+    .newsletter {
+        padding: 40px 20px;
+    }
+ 
+    .newsletter h2 {
+        font-size: 22px;
+    }
+ 
+    .newsletter p {
+        font-size: 14px;
+    }
+ 
+    .newsletter__form {
+        flex-direction: column;
+        border: none;
+        gap: 10px;
+    }
+ 
+    .newsletter__form input {
+        border: 3px solid black;
+        border-radius: 5px;
+        width: 100%;
+    }
+ 
+    .newsletter__form button {
+        border-radius: 5px;
+        padding: 12px;
+        font-size: 16px;
+    }
+ 
+    /* Footer */
+    .footer {
+        padding: 30px 20px;
+    }
+ 
+    .footer h1 {
+        font-size: 28px;
+    }
+ 
+    .footer p {
+        font-size: 14px;
+    }
+ 
+    .footer__icons i {
+        font-size: 22px;
+    }
+}
+ 
