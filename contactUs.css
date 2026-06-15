@@ -144,3 +144,17 @@ input[type=submit]:hover {
     font-weight: 400;
     margin-top: 10px;
 }
+@media (max-width: 600px) {
+ 
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin: 10px 15px;
+    }
+ 
+    .navbar__link {
+        flex-direction: column;
+        gap: 6px;
+    }

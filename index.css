@@ -555,31 +555,27 @@ img {
     .newsletter p {
         font-size: 15px;
     }
-}
+
  
 /* ===========================
    RESPONSIVE - MOBILE (600px)
 =========================== */
 @media (max-width: 600px) {
  
-    /* Banner */
-    .top-banner {
-        font-size: 13px;
-        padding: 10px 15px;
-    }
- 
     /* Navbar */
     .navbar {
-        padding: 15px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin: 10px 15px;
     }
  
-    .navbar__links {
-        display: none;
+    .navbar__link {
+        flex-direction: column;
+        gap: 6px;
     }
  
-    .navbar__hamburger {
-        display: block;
-    }
+
  
     /* Hero */
     .hero {
@@ -718,4 +714,3 @@ img {
         font-size: 22px;
     }
 }
- 
