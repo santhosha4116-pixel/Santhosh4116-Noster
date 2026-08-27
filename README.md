@@ -1,63 +1,24 @@
-Noster E-Commerce Website
-Overview
+# Nostra - E-commerce Website
 
-Noster is a responsive e-commerce website built using HTML, CSS, and JavaScript. The project provides a simple online shopping experience with multiple pages for browsing products and contacting the business.
+A responsive e-commerce website built using HTML, CSS, and JavaScript. The project includes a home page, collections page, and contact page with search and filter functionality.
 
-Features
-Responsive design for desktop and mobile devices
-Modern and clean user interface
-Product collection page
-Contact Us page
-Interactive functionality using JavaScript
-Easy navigation between pages
-Pages
-Home Page
-Landing page of the website
-Featured products section
-Navigation menu
-Attractive banner and layout
-Collection Page
-Displays product collections
-Product search and filtering functionality
-Organized product listings
-Contact Us Page
-Contact form for customer inquiries
-User-friendly interface
-Easy communication with customers
-Technologies Used
-HTML5
-CSS3
-JavaScript
-Project Structure
-Noster/
-│
-├── index.html
-├── collection.html
-├── contactUs.html
-│
-├── css/
-│   ├── index.css
-│   ├── collection.css
-│   └── contactUs.css
-│
-├── js/
-│   ├── script.js
-│   ├── collection.js
-│   
-│
-└── assets/
-How to Run the Project
-Download or clone the repository.
-Open the project folder.
-Open index.html in your web browser.
-Future Improvements
-Shopping cart functionality
-User authentication
-Product details page
-Payment gateway integration
-Backend database support
-Author
+## Features
 
-Santhosh
+* Responsive home page
+* Collections page with product listings
+* Product search functionality
+* Product filter functionality using JavaScript
+* Contact Us page
+* Responsive design for different screen sizes
 
-This project was created for learning and practicing front-end web development using HTML, CSS, and JavaScript.
+## Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript
+* Flexbox
+* CSS Media Queries
+
+## Project Purpose
+
+This project was created to practice front-end development, responsive web design, JavaScript DOM manipulation, search functionality, and product filtering by building a complete e-commerce website.
